@@ -7,6 +7,10 @@ const jobSchema = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: "Employee"
     },
+    applicantions: [{
+      type:  mongoose.Schema.Types.ObjectId,
+      ref: 'Application'
+    }],
     title: String,
     skills: [],
     jobType: { type: String, enum: ["In office", "Hybrid", "Remote"] },

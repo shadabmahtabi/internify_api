@@ -47,9 +47,9 @@ const internshipSchema = new mongoose.Schema(
       maxCTC: Number
     },
     coverLetter: {
-      question: String,
+      questions: [{type: String}],
+      assignments: [{type: String}],
       availability: String,
-      assessments: []
     },
     alternateNumber: Number,
   },

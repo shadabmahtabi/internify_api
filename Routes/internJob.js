@@ -36,7 +36,7 @@ router.post('/jobs/update/:jobId', employee.isAuthenticated, updatejob)
 router.get('/jobs/close/:jobId', employee.isAuthenticated, closejob)
 
 // GET /internjob/jobs
-router.get('/jobs', employee.isAuthenticated, readjobs) 
+router.get('/jobs', readjobs) 
 
 // GET /internjob/jobs/:jobId
 router.get('/jobs/:jobId', employee.isAuthenticated, readSingleJob) 
